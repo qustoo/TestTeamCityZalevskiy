@@ -1,5 +1,4 @@
-import pytest
-def Factorial_error(n):
+def Factorial(n):
     isGood = str(n).isnumeric()
     if not isGood: # if incorrect input
         return None
@@ -10,10 +9,10 @@ def Factorial_error(n):
         return result
 
 def test_error():
-    n= Factorial_error(5)
+    n = Factorial(5)
     assert n == 20
 
 if __name__ == '__main__':
     print('Waiting for input n...')
     n = input()
-    print(f'for n ={n}, factorial = {Factorial_error(n)}')
+    print(f'for n ={n}, factorial = {Factorial(n)}')
