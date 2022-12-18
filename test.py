@@ -20,7 +20,9 @@ class TestMyFactoral(unittest.TestCase):
 
     def test_incorrect_input(self):
         res = Factorial("hahaha")
-        print(res)
         self.assertEqual(res,None)
+
+suite = unittest.TestLoader().loadTestsFromTestCase(TestMyFactoral)
+unittest.TextTestRunner(verbosity=2).run(suite)
 
 
