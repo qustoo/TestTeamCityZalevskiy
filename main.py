@@ -9,11 +9,11 @@ def Factorial(n):
         return result
 
 def test_error():
-    pass
-    # n = Factorial(5)
-    # assert n == 20
+    n = Factorial(5)
+    assert n == 20
 
 if __name__ == '__main__':
     print('Waiting for input n...')
     n = 15
+    test_error()
     print(f'for n ={n}, factorial = {Factorial(n)}')
