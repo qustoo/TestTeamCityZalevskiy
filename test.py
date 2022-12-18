@@ -6,6 +6,10 @@ class TestMyFactoral(unittest.TestCase):
         res = Factorial(-1)
         self.assertEqual(res,None)
 
+    def test_big_negative_numver(self):
+        res = Factorial(-10000)
+        self.assertEqual(res,None)
+
     def test_positive_small_number(self):
         res = Factorial(5)
         self.assertEqual(res,120)
@@ -16,6 +20,7 @@ class TestMyFactoral(unittest.TestCase):
 
     def test_incorrect_input(self):
         res = Factorial("hahaha")
-        self.assertEqual(res,ValueError)
+        print(res)
+        self.assertEqual(res,None)
 
 
