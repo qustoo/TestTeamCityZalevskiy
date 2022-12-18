@@ -15,5 +15,5 @@ def test_error():
 if __name__ == '__main__':
     print('Waiting for input n...')
     n = 15
-    test_error()
+    # test_error()
     print(f'for n ={n}, factorial = {Factorial(n)}')
