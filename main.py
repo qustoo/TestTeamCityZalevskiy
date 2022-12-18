@@ -1,4 +1,4 @@
-def Factorial(n):
+def Factorial_error(n):
     isGood = str(n).isnumeric()
     if not isGood: # if incorrect input
         return None
@@ -10,5 +10,5 @@ def Factorial(n):
 
 if __name__ == '__main__':
     print('Waiting for input n...')
-    n = input()
+    #n = input()
     print(f'factorial({n}) = {Factorial(n)}')
