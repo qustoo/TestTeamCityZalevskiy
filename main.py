@@ -1,3 +1,4 @@
+import sys
 def Factorial(n):
     isGood = str(n).isnumeric()
     if not isGood: # if incorrect input
@@ -12,4 +13,5 @@ if __name__ == '__main__':
     print('Waiting for input n...')
     # n = input()
     n = "haha"
+    sys.exit(1)
     print(f'factorial({n}) = {Factorial(n)}')
