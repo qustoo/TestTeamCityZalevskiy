@@ -1,8 +1,7 @@
-import lib
 def Factorial(n):
     isGood = str(n).isnumeric()
     if not isGood: # if incorrect input
-        return None
+        raise TimeoutError
     else: # else going to calculate factorial
         result = 1
         for i in range(2,int(n)+1):
@@ -11,5 +10,6 @@ def Factorial(n):
 
 if __name__ == '__main__':
     print('Waiting for input n...')
-    n = input()
-    print(f'factorial({n}) = {Factorial()}')
+    # n = input()
+    n = "haha"
+    print(f'factorial({n}) = {Factorial(n)}')
