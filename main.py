@@ -1,3 +1,4 @@
+import unittest
 def Factorial(n):
     isGood = str(n).isnumeric()
     if not isGood: # if incorrect input
@@ -8,12 +9,8 @@ def Factorial(n):
             result*=i
         return result
 
-def test_error():
-    n = Factorial(5)
-    assert n == 20
 
 if __name__ == '__main__':
     print('Waiting for input n...')
-    n = 15
-    # test_error()
+    n = 5
     print(f'for n ={n}, factorial = {Factorial(n)}')
